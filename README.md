@@ -2,15 +2,15 @@
  
   ######## Group 1 Members ########
   
-  Ryan Benham     
+  Ryan Benham -
   
-  Szymon Gos
+  Szymon Gos - HTML / JS
   
-  Kaloyan Lalov
+  Kaloyan Lalov - CSS
   
-  Ricky Richards
+  Ricky Richards - Database
   
-  Christopher Rollason
+  Christopher Rollason - UI/UX
  
  
  
