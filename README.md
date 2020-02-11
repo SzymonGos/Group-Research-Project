@@ -2,7 +2,7 @@
  
   ######## Group 1 Members ########
   
-  Ryan Benham -
+  Ryan Benham - Layout
   
   Szymon Gos - HTML / JS
   
