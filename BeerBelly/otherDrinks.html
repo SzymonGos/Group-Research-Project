@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <title>Beer Company</title>
 </head>
 
 <body>
+    <!-- Login popup window start -->
+    <div class="popup">
+        <div class="popup-content">
+            <i class="fas fa-4x fa-user-circle user"></i>
+            <i class="far fa-times-circle close"></i>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <a href="#" class="button">LOGIN</a>
+        </div>
+    </div>
+    <!-- Login popup window end -->
     <div id="wraper">
         <!-- Header start  -->
-        <a href="index.html"><img class="logo" src="img/logo.svg" alt="logo"></a>
+        <a class="logo_wraper" href="index.html"><img class="logo" src="img/logo.svg" alt="logo"></a>
         <header>
             <div class="container">
                 <nav>
@@ -23,13 +35,15 @@
                         <li><a href="aboutUs.html">About Us</a></li>
                         <li><a href="contactUs.html">Contact</a></li>
                     </ul>
-
-                    <div class="inline">x</div>
-                    <div class="inline">x</div>
-                    <div class="inline">x</div>
+                   
+                    <i class="fas fa-shopping-basket inline navicon"></i>
+                    <i class="fas fa-cog inline navicon" id="login"></i>
+                    <i class="far fa-star inline navicon"></i>
                 </nav>
             </div>
         </header>
+        <!-- Header end -->
+
         <section class="banner">Other Drinks</section>
         <section class="filter">Filter</section>
         <section class="products">Products</section>
@@ -37,6 +51,7 @@
         <footer>Footer</footer>
         <!-- Footer end-->
     </div>
-</body>
 
+</body>
+<script type="text/javascript" src="script.js"></script>
 </html>

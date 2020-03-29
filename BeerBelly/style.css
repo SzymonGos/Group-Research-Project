@@ -30,30 +30,61 @@ body{
 .logo_wraper {
     background: none!important;
 }
+
 header {
     grid-column: 2/13;
     background: none!important;
 }
 
+
+/* navbar icons */
+.navicon {
+    font-size: 20px;
+    display: block;
+    margin: 10px;
+    margin-right: 10px;
+    height: 24px;
+    width: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.navicon:hover{
+    color: #fcb835;
+}
+
+.inline {
+    float: right;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+
 .container {
-    background: #5f5e5e8c;
+    background: #999999;
     border-radius: 15px;
     width: 100%;
     height: 70%;
     margin-top: 15px;
 }
 
+/* Navigation styling */
+
 ul {  
     list-style: none;
     display: flex;
     float: left;
-    padding-top: 10px;
+    padding-top: 13px;
 }
 
 li a { 
+    font-family: Helvetica, sans-serif;
     text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: 200;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    font-size: 12pt;
+    text-transform: uppercase;
 }
 
 
@@ -65,22 +96,97 @@ li a:hover{
     color: #fcb835;
 }
 
+li a:active{
+    color: #de7710;
+}
+
 li{
     padding-right: 15px;
-    padding-left: 10px;
-    border-right: .5px solid #ffffff;
+    padding-left: 15px;
+    border-right: 1px solid #ffffff;
+
 }
 
 li:last-child{
     border-right: none;
 }
-.inline {
-    float: right;
-    padding-top: 15px;
-    padding-right: 10px;
+
+/* Login/Register popup window */
+
+.popup {
+    background: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.popup-content {
+    height: 350px;
+    width: 500px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.user {
+    color: #999999;
 }
 
 
+.close{
+    font-size: 27px;
+    color: #fcb835;
+    /* color: #797979; */
+    position: absolute;
+    justify-content: center;
+    top: -24px;
+    right: -18px;
+    width: 26px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 29px -3px rgb(0, 0, 0, 0.75); 
+    cursor: pointer;
+}
+
+.close:hover{
+    color: #de7710;
+}
+
+
+input {
+    margin: 30px auto;
+    padding: 8px;
+    display: block;
+    width: 50%;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 10pt;
+}
+
+
+.button {
+    background: #ffffff;
+    padding: 10px 15px;
+    color: #999999;
+    border-radius: 5px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 18px;
+    box-shadow: 6px 6px 29px -3px rgb(0, 0, 0, 0.75);
+    margin-top: 25px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.button:hover {
+    background: #999999;
+    color: #ffffff;
+}
 /* Home page */
 
 .popular { 
