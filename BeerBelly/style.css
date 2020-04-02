@@ -1,5 +1,5 @@
 body{
-    text-align: center;
+    
     font-family: Helvatica, sans-serif;
     letter-spacing: 2px;
     background: #ffffff;
@@ -17,7 +17,6 @@ body{
 
 #wraper > * {
     background-color: #dddddd;
-
 }
 
 
@@ -47,11 +46,12 @@ header {
     width: 24px;
     color: white;
     cursor: pointer;
+    transition: color .2s ease-out;
 }
 
 
 .navicon:hover{
-    color: #fcb835;
+    color: #fdc23e;
 }
 
 .inline {
@@ -82,9 +82,10 @@ li a {
     font-family: Helvetica, sans-serif;
     text-decoration: none;
     letter-spacing: 1.5px;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 12pt;
     text-transform: uppercase;
+    transition: color .2s ease-out;
 }
 
 
@@ -93,11 +94,7 @@ li a:visited{
 }
 
 li a:hover{
-    color: #fcb835;
-}
-
-li a:active{
-    color: #de7710;
+    color: #fdc23e;
 }
 
 li{
@@ -113,63 +110,68 @@ li:last-child{
 
 /* Login/Register popup window */
 
-.popup {
-    background: rgb(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.nested {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(30px, auto);
+    grid-gap: 10px;
 }
 
-.popup-content {
-    height: 350px;
-    width: 500px;
+.nested a{
+    grid-column: 1 / 4;
+    padding: 20px 0px 5px 30px;
+}
+
+.content {
+    height: 400px;
+    width: 100%;
     background: #ffffff;
-    padding: 20px;
     border-radius: 5px;
     position: relative;
+    padding-top: 30px;
+    
 }
 
-.user {
-    color: #999999;
+
+.title1 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    margin: 0;
+    padding-left: 30px;
 }
 
-
-.close{
-    font-size: 27px;
-    color: #fcb835;
-    /* color: #797979; */
-    position: absolute;
-    justify-content: center;
-    top: -24px;
-    right: -18px;
-    width: 26px;
-    border-radius: 50%;
-    box-shadow: 6px 6px 29px -3px rgb(0, 0, 0, 0.75); 
-    cursor: pointer;
+.title2 {
+    grid-column: 1 /3;
+    grid-row: 2;
+    margin: 0;
+    padding-left: 30px;
 }
-
-.close:hover{
-    color: #de7710;
-}
-
 
 input {
-    margin: 30px auto;
-    padding: 8px;
+    margin: 20px 30px 0px 30px;
+    padding: 20px;
     display: block;
-    width: 50%;
     font-family: Helvetica, sans-serif;
     letter-spacing: 1px;
-    font-size: 10pt;
+    font-size: 11pt;
+    width: 60%;
+    border-radius: 2px;
+    border: 1px solid #e3e3e3;
+    grid-column: 1 / 13;
+    outline: none;
+}
+
+input::placeholder {
+    color: #a5a5a5;
+}
+
+.box {
+    padding-top: 20px;
+    grid-column: 1 / 7 ;
 }
 
 
-.button {
+button {
     background: #ffffff;
     padding: 10px 15px;
     color: #999999;
@@ -178,15 +180,37 @@ input {
     text-transform: uppercase;
     font-size: 18px;
     box-shadow: 6px 6px 29px -3px rgb(0, 0, 0, 0.75);
-    margin-top: 25px;
+    margin: 0px 40px 0px 30px;
     text-decoration: none;
     transition: 0.4s;
+    outline: none;
+    cursor: pointer;
+    border: none;
 }
 
-.button:hover {
+button:hover {
     background: #999999;
     color: #ffffff;
 }
+
+p{
+    font-size: 10pt;
+    display: inline;
+}
+
+.link {
+    color: #ff9000;
+    font-size: 11pt;
+    letter-spacing: .3px;
+    transition: color .2s;
+}
+.link:hover {
+    color: #fdc23e;
+}
+
+/* Login/Reg End */
+
+
 /* Home page */
 
 .popular { 
@@ -276,4 +300,113 @@ footer {
 .details {
     grid-column: 8 / 13;
     grid-row: 2 / 8;
+}
+
+
+/* Login Page */
+
+.login {
+    grid-column: 1 / 13;
+    grid-row: 2 / 6;
+    padding: 20px;
+}
+
+
+/* Lost-Password page*/
+
+.lost-pass {
+    padding: 20px;
+    grid-column: 1 / 13;
+    grid-row: 2 / 6;
+}
+
+
+
+.lost-pass input {
+    width: 60%;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid #e3e3e3;
+    margin-top: 30px;
+    
+}
+
+.lost-pass p, h4 {
+    margin-left: 30px;
+}
+
+
+.lost-pass button {
+    margin-top: 40px;
+}
+
+
+/* Rgister page */
+
+.register-box {
+    grid-column: 1 / 13;
+    grid-row: 2 / 7;
+    padding: 20px;
+}
+
+.register-box .content {
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.reg-form {
+    display: flex;
+}
+
+.column1 {
+    flex: 1;
+    width: 50%;
+}
+
+.column2 {
+    width: 50%;
+}
+
+.reg-form button {
+    margin-top: 30px;
+}
+
+.register-box input {
+    
+    width: 70%;
+    padding: 15px;
+    margin: 0px 0px 20px 30px;
+}
+
+.register-box label {
+    font-size: 12pt;
+    margin-left: 30px;
+}
+
+.form-control{
+    margin-bottom: 50px;
+}
+
+.form-control input {
+    margin-bottom: 0;
+}
+.form-control small {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 9pt;
+    visibility: hidden;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control.error small {
+    color: #e74c3c;
+    visibility: visible;
 }

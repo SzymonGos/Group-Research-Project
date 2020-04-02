@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/all.min.css">
     <title>Beer Company</title>
+    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
                         <li><a href="aboutUs.html">About Us</a></li>
                         <li><a href="contactUs.html">Contact</a></li>
                     </ul>
-                   
+
                     <i class="fas fa-shopping-basket inline navicon"></i>
                     <a href="my-account.html"><i class="far fa-user inline navicon"></i></a>
                     <i class="far fa-star inline navicon"></i>
@@ -33,14 +34,30 @@
         </header>
         <!-- Header end -->
 
-        <section class="banner">Other Drinks</section>
-        <section class="filter">Filter</section>
-        <section class="products">Products</section>
+        <!-- My Account start-->
+        <section class="login">
+            <div class="content">
+                <form action="/" class="nested">
+                    <h4 class="title1">My Account</h4>
+                    <h3 class="title2">Login</h3>
+                    <input type="text" placeholder="Username or email address*" required>
+                    <input type="password" placeholder="Password*" required>
+                    <a href="lost-password.html" class="link">Forgot password?</a>
+                    <div class="box">
+                        <button>LOGIN</button>
+
+                        <p>Don't have an account?</p><a href="register.html" class="link">Sign up here</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- My Account end-->
+
         <!-- Footer start-->
         <footer>Footer</footer>
         <!-- Footer end-->
     </div>
 
 </body>
-<script type="text/javascript" src="script.js"></script>
+
 </html>
