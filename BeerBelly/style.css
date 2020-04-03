@@ -1,9 +1,9 @@
-body{
-    
+body {
     font-family: Helvatica, sans-serif;
     letter-spacing: 2px;
     background: #ffffff;
-    background: linear-gradient(180deg, #ffffffe2 0%, #000000be 100%);;
+    background: linear-gradient(180deg, #ffffffe2 0%, #000000be 100%);
+    ;
 }
 
 #wraper {
@@ -15,8 +15,9 @@ body{
     margin: 0 auto;
 }
 
-#wraper > * {
-    background-color: #dddddd;
+#wraper>* {
+    /* background-color: #dddddd; */
+    background-color: #dddddd3f;
 }
 
 
@@ -37,6 +38,7 @@ header {
 
 
 /* navbar icons */
+
 .navicon {
     font-size: 20px;
     display: block;
@@ -49,8 +51,7 @@ header {
     transition: color .2s ease-out;
 }
 
-
-.navicon:hover{
+.navicon:hover {
     color: #fdc23e;
 }
 
@@ -60,7 +61,6 @@ header {
     padding-right: 10px;
 }
 
-
 .container {
     background: #999999;
     border-radius: 15px;
@@ -69,16 +69,17 @@ header {
     margin-top: 15px;
 }
 
+
 /* Navigation styling */
 
-ul {  
+ul {
     list-style: none;
     display: flex;
     float: left;
     padding-top: 13px;
 }
 
-li a { 
+li a {
     font-family: Helvetica, sans-serif;
     text-decoration: none;
     letter-spacing: 1.5px;
@@ -88,27 +89,26 @@ li a {
     transition: color .2s ease-out;
 }
 
-
-li a:visited{
+li a:visited {
     color: #ffffff;
 }
 
-li a:hover{
+li a:hover {
     color: #fdc23e;
 }
 
-li{
+li {
     padding-right: 15px;
     padding-left: 15px;
     border-right: 1px solid #ffffff;
-
 }
 
-li:last-child{
+li:last-child {
     border-right: none;
 }
 
-/* Login/Register popup window */
+
+/* My account */
 
 .nested {
     display: grid;
@@ -117,21 +117,19 @@ li:last-child{
     grid-gap: 10px;
 }
 
-.nested a{
+.nested a {
     grid-column: 1 / 4;
     padding: 20px 0px 5px 30px;
 }
 
 .content {
-    height: 400px;
+    min-height: 400px;
     width: 100%;
     background: #ffffff;
     border-radius: 5px;
     position: relative;
     padding-top: 30px;
-    
 }
-
 
 .title1 {
     grid-column: 1 / 3;
@@ -167,21 +165,21 @@ input::placeholder {
 
 .box {
     padding-top: 20px;
-    grid-column: 1 / 7 ;
+    grid-column: 1 / 7;
 }
-
 
 button {
     background: #ffffff;
     padding: 10px 15px;
     color: #999999;
     border-radius: 5px;
-    font-weight: bolder;
+    font-weight: 600;
     text-transform: uppercase;
     font-size: 18px;
     box-shadow: 6px 6px 29px -3px rgb(0, 0, 0, 0.75);
     margin: 0px 40px 0px 30px;
     text-decoration: none;
+    letter-spacing: 1px;
     transition: 0.4s;
     outline: none;
     cursor: pointer;
@@ -193,7 +191,7 @@ button:hover {
     color: #ffffff;
 }
 
-p{
+.box p {
     font-size: 10pt;
     display: inline;
 }
@@ -204,16 +202,18 @@ p{
     letter-spacing: .3px;
     transition: color .2s;
 }
+
 .link:hover {
     color: #fdc23e;
 }
+
 
 /* Login/Reg End */
 
 
 /* Home page */
 
-.popular { 
+.popular {
     grid-column: 1 / 13;
     grid-row: 2 / 6;
 }
@@ -221,35 +221,32 @@ p{
 .categories {
     grid-column: 1 / 13;
     grid-row: 6;
-   
 }
 
-.cat1{
+.cat1 {
     grid-column: 1 / 5;
     grid-row: 7 / 12;
 }
 
-.cat2{
+.cat2 {
     grid-column: 5 / 9;
     grid-row: 7 / 12;
 }
 
-.cat3{
+.cat3 {
     grid-column: 9 / 13;
     grid-row: 7 / 12;
 }
 
-.mission{
+.mission {
     grid-column: 1 / 13;
     grid-row: 12 / 16;
 }
 
 footer {
     grid-column: 1 / 13;
-   height: 400px;
-   
+    height: 400px;
 }
-
 
 
 /* Beers page*/
@@ -260,22 +257,71 @@ footer {
 }
 
 .filter {
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
     grid-row: 5 / 15;
 }
 
 .products {
-    grid-column: 4 / 13;
+    grid-column: 3 / 13;
     grid-row: 5 / 15;
 }
 
+.products .content {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.card {
+    margin: 10px auto;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+}
+
+.card p {
+    display: block;
+}
+
+.price {
+    color: gray;
+    font-size: 20pt;
+}
+
+.btn-inline {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card-btn {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    width: 50%;
+    font-size: 7pt;
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0px;
+    display: inline-block;
+}
+
+.img {
+    height: 300px;
+}
 
 
 /* Special Offers page */
+
 .items {
     grid-column: 1 / 13;
     grid-row: 5 / 10;
 }
+
 
 /*About Us page*/
 
@@ -292,14 +338,86 @@ footer {
 
 /* Conctact Us page*/
 
-.form {
-    grid-column: 1 / 8;
+.contact-us {
+    grid-column: 1 / 10;
     grid-row: 2 / 8;
+    padding: 20px;
 }
 
 .details {
-    grid-column: 8 / 13;
+    grid-column: 10 / 13;
     grid-row: 2 / 8;
+}
+
+.row {
+    display: flex;
+}
+
+.row input {
+    margin: 0px 20px 0px 20px;
+    width: 50%;
+}
+
+.block {
+    padding: 20px;
+    display: block;
+}
+
+.subject {
+    box-sizing: border-box;
+    margin: 10px 0px 20px 0px;
+    width: 100%;
+}
+
+.area {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 11pt;
+    border-radius: 2px;
+    border: 1px solid #e3e3e3;
+    outline: none;
+    resize: none;
+    height: 200px;
+}
+
+.area::placeholder {
+    color: #a5a5a5;
+}
+
+.contact-form button {
+    margin-bottom: 30px;
+}
+
+.contact-form h3 {
+    padding: 20px;
+}
+
+.details {
+    padding: 20px;
+}
+
+.details h3,
+h4 {
+    font-weight: 400;
+}
+
+.details-icons {
+    font-size: 20px;
+    margin: 20px 5px;
+}
+
+.details .link {
+    color: #202020;
+    font-size: 11pt;
+    letter-spacing: .3px;
+    transition: color .2s;
+}
+
+.details .link:hover {
+    color: #636363;
 }
 
 
@@ -311,6 +429,10 @@ footer {
     padding: 20px;
 }
 
+.my-account {
+    grid-column: 1 / 13;
+}
+
 
 /* Lost-Password page*/
 
@@ -320,21 +442,18 @@ footer {
     grid-row: 2 / 6;
 }
 
-
-
 .lost-pass input {
     width: 60%;
     outline: none;
     border-radius: 2px;
     border: 1px solid #e3e3e3;
     margin-top: 30px;
-    
 }
 
-.lost-pass p, h4 {
+.lost-pass p,
+h4 {
     margin-left: 30px;
 }
-
 
 .lost-pass button {
     margin-top: 40px;
@@ -372,7 +491,6 @@ footer {
 }
 
 .register-box input {
-    
     width: 70%;
     padding: 15px;
     margin: 0px 0px 20px 30px;
@@ -383,13 +501,14 @@ footer {
     margin-left: 30px;
 }
 
-.form-control{
+.form-control {
     margin-bottom: 50px;
 }
 
 .form-control input {
     margin-bottom: 0;
 }
+
 .form-control small {
     position: absolute;
     margin-top: 10px;

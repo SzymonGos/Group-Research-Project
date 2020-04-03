@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <title>Beer Company</title>
+    <title>Beer Belly</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
                         <li><a href="aboutUs.html">About Us</a></li>
                         <li><a href="contactUs.html">Contact</a></li>
                     </ul>
-                   
+
                     <i class="fas fa-shopping-basket inline navicon"></i>
                     <a href="my-account.html"><i class="far fa-user inline navicon"></i></a>
                     <i class="far fa-star inline navicon"></i>
@@ -33,8 +33,55 @@
         </header>
         <!-- Header end -->
 
-        <section class="form">Form Example</section>
-        <section class="details">Contact details</section>
+        <!-- Contact us form start-->
+        <section class="contact-us">
+            <div class="content">
+                <form class="contact-form">
+
+                    <h3>Contact us</h3>
+
+                    <div class="row">
+                        <input type="text" name="fullName" id="fullName" placeholder="Your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email Address">
+                    </div>
+                    <div class="block">
+                        <input class="subject" type="text" name="subject" id="subject" placeholder="Subject" required>
+                        <textarea class="area" placeholder="Leave a Message" required></textarea>
+                    </div>
+                    <button>SEND MESSAGE</button>
+                </form>
+            </div>
+        </section>
+        <!-- Contact us form end-->
+
+        <!--  -->
+        <section class="details">
+
+            <h3>Beer Belly</h3>
+            <div class="row">
+                <i class="fas fa-map-marker-alt details-icons"></i>
+                <h4>London, Uk</h4>
+            </div>
+            <div class="row">
+                <i class="fas fa-mobile details-icons"></i>
+                <h4>+07777 12345</h4>
+            </div>
+
+            <div class="row">
+                <i class="fas fa-clock details-icons"></i>
+                <h4>9:00 - 21:00</h4>
+            </div>
+
+            <div class="row">
+                <i class="fas fa-envelope details-icons"></i>
+                <a href="#" class="link">
+                    <h4>great_beer@beerbelly.co.uk</h4>
+                </a>
+            </div>
+
+
+        </section>
+
         <!-- Footer start-->
         <footer>Footer</footer>
         <!-- Footer end-->
@@ -42,4 +89,5 @@
 
 
 </body>
+
 </html>
