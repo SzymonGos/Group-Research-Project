@@ -128,7 +128,7 @@ li:last-child {
     background: #ffffff;
     border-radius: 5px;
     position: relative;
-    padding-top: 30px;
+    padding: 30px 20px;
 }
 
 .title1 {
@@ -276,7 +276,7 @@ footer {
 .card {
     margin: 10px auto;
     margin-top: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 #00000033;
     max-width: 300px;
     text-align: center;
 }
@@ -290,24 +290,28 @@ footer {
     font-size: 20pt;
 }
 
-.btn-inline {
+.btn-wraper {
     width: 100%;
-    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+}
+
+.btn-inline {
+    display: inline-block;
 }
 
 .card-btn {
     border: none;
     outline: 0;
-    padding: 12px;
+    padding: 15px;
     color: white;
     background-color: #000;
     cursor: pointer;
-    width: 50%;
-    font-size: 7pt;
+    width: 150px;
+    font-size: 10pt;
     box-shadow: none;
     margin: 0;
     border-radius: 0px;
-    display: inline-block;
 }
 
 .img {

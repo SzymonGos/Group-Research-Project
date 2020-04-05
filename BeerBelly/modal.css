@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 10;
+    background-color: white;
+    width: 700px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .3px solid #00000033;
+}
+
+.close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    font: 1.25rem;
+    font-weight: bold;
+}
+
+.brewery-link {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: #f08812;
+    cursor: pointer;
+    width: 20%;
+    font-size: 7pt;
+    box-shadow: none;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.brewery-link:hover {
+    background-color: rgb(255, 177, 88);
+}
+
+.modal-body {
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+}
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+
+/* beer image box */
+
+.image {
+    height: 500px;
+    width: 400px;
+    float: right;
+    padding: 10px 15px;
+    background-color: aquamarine;
+}
