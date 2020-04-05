@@ -2,15 +2,15 @@
  
   ######## Group 1 Members ########
   
-  Ryan Benham - Layout
+  Ryan Benham - Design
   
-  Szymon Gos - HTML / JS
+  Szymon Gos - Front-End
   
-  Kaloyan Lalov - CSS
+  Kaloyan Lalov - 3D models
   
   Ricky Richards - Database
   
-  Christopher Rollason - UI/UX
+  Christopher Rollason - Project Manager / Documentation
  
  
  
