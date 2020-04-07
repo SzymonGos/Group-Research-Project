@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="css/all.min.css">
+
     <title>Beer Belly</title>
 </head>
 
@@ -28,37 +29,54 @@
                     <!-- Seaarch field -->
                     <div class="search-container">
                         <form action="/">
-                            <input type="text" placeholder="Search.." name="search">
+                            <input type="text" placeholder="Search.." name="search" id="textsend">
                             <button type="submit"> <i class="fas fa-search search-icon"></i></button>
                         </form>
                     </div>
                     <!-- Search field end-->
-
                     <a href="cart.html"> <i class="fas fa-shopping-basket inline navicon"></i></a>
                     <a href="my-account.html"><i class="far fa-user inline navicon"></i></a>
                     <a href="#"> <i class="far fa-star inline navicon"></i></a>
                 </nav>
             </div>
         </header>
-        <!-- Header end -->
+        <!-- Header  end-->
 
-        <!--Lost Password start -->
-        <section class="lost-pass">
-            <div class="content">
-                <h4>My Account</h4>
-                <p>Forgot your password? Please enter your email address. We will send you a link via email to create a new password. </p>
-                <form>
-                    <input type="email" placeholder="Email address*" required>
-                    <button>RESET PASSWORD</button>
-                </form>
+        <!-- Featured  start-->
+        <section class="cart">
+            <!-- Product details modal start -->
+            <div class="modal" id="cart">
+                <div class="modal-header">
+                    <div class="titlle">Shopping Cart</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="column">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ea sapiente voluptate ipsum neque voluptas voluptatibus quam a numquam ab. Ex soluta corrupti perspiciatis veritatis molestiae in sit vitae adipisci optio illum quas laudantium
+                        esse porro sapiente neque maxime quia obcaecati, officia voluptas. Est dolore numquam vero a adipisci asperiores?</div>
+                    <div class="column">
+                        <div class="slideshow">
+                            <div class="myslide">
+                                <div class="image">PHOTO 1</div>
+                            </div>
+                            <div class="myslide">
+                                <div class="image2">PHOTO 2</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="btn-wraper">
+                    <button class="card-btn">Continue to Checkout</button>
+                </div>
 
             </div>
+            <div id="overlay"></div>
+            <!-- Product details modal end -->
         </section>
-        <!-- Lost Password end -->
+        <!-- Featured end-->
 
-        <!-- Footer start -->
-        <footer>Footer</footer>
-        <!-- Footer end -->
+
     </div>
 
 </body>
