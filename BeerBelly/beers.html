@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="css/all.min.css">
     <script defer src="javascripts/modal.js"></script>
-    <script defer src="/javascripts/slideshow.js"></script>
+    <script defer src="javascripts/slideshow.js"></script>
+    <script defer src="javascripts/cart.js"></script>
     <title>Beer Belly</title>
 </head>
 
@@ -37,9 +38,11 @@
                     </div>
                     <!-- Search field end-->
 
-                    <a href="cart.html"> <i class="fas fa-shopping-basket inline navicon"></i></a>
+                    <!-- Nav icons start -->
+                    <a href="cart.html"> <i class="fas fa-shopping-basket inline navicon"><span class="quantity">0</span></i></a>
                     <a href="my-account.html"><i class="far fa-user inline navicon"></i></a>
                     <a href="#"> <i class="far fa-star inline navicon"></i></a>
+                    <!-- Nav icons end-->
                 </nav>
             </div>
         </header>
@@ -59,11 +62,11 @@
                 <div class="card">
                     <h2>Item Name</h2>
                     <div class="img"></div>
-                    <p class="price">£19.99</p>
+                    <p class="price">£6.00</p>
                     <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
                     <div class="btn-wraper">
                         <div class="btn-inline">
-                            <button data-modal-target="#cart" class="card-btn">Add to Cart</button>
+                            <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
                             <button data-modal-target="#modal" class="card-btn">Quick View</button>
@@ -71,6 +74,67 @@
                     </div>
                 </div>
 
+                <div class="card">
+                    <h2>Item Name</h2>
+                    <div class="img"></div>
+                    <p class="price">£10.00</p>
+                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
+                    <div class="btn-wraper">
+                        <div class="btn-inline">
+                            <button class="card-btn add-cart">Add to Cart</button>
+                        </div>
+                        <div class="btn-inline">
+                            <button data-modal-target="#modal" class="card-btn">Quick View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Item Name</h2>
+                    <div class="img"></div>
+                    <p class="price">£5.00</p>
+                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
+                    <div class="btn-wraper">
+                        <div class="btn-inline">
+                            <button class="card-btn add-cart">Add to Cart</button>
+                        </div>
+                        <div class="btn-inline">
+                            <button data-modal-target="#modal" class="card-btn">Quick View</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <h2>Item Name</h2>
+                    <div class="img"></div>
+                    <p class="price">£5.00</p>
+                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
+                    <div class="btn-wraper">
+                        <div class="btn-inline">
+                            <button class="card-btn add-cart">Add to Cart</button>
+                        </div>
+                        <div class="btn-inline">
+                            <button data-modal-target="#modal" class="card-btn">Quick View</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <h2>Item Name</h2>
+                    <div class="img"></div>
+                    <p class="price">£5.00</p>
+                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
+                    <div class="btn-wraper">
+                        <div class="btn-inline">
+                            <button class="card-btn add-cart">Add to Cart</button>
+                        </div>
+                        <div class="btn-inline">
+                            <button data-modal-target="#modal" class="card-btn">Quick View</button>
+                        </div>
+                    </div>
+                </div>
 
 
                 <!-- Product details modal start -->
@@ -103,7 +167,7 @@
 
                     </div>
                     <div class="btn-wraper">
-                        <button class="card-btn">Add to Cart</button>
+                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
 
                 </div>
@@ -111,29 +175,6 @@
                 <!-- Product details modal end -->
             </div>
 
-            <!-- shopping cart modal start -->
-            <div class="modal" id="cart">
-                <div class="modal-header">
-                    <div class="titlle">Example Item</div>
-                    <button class="brewery-link">Where's my brewery?</button>
-                    <button data-close-button class="close-button">&times;</button>
-                </div>
-
-                <div class="modal-body">
-                    <div class="column">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ea sapiente voluptate ipsum neque voluptas voluptatibus quam a numquam ab. Ex soluta corrupti perspiciatis veritatis molestiae in sit vitae adipisci optio illum quas laudantium
-                        esse porro sapiente neque maxime quia obcaecati, officia voluptas. Est dolore numquam vero a adipisci asperiores?</div>
-                    <div class="column">
-                        <div class="image">PHOTO</div>
-                    </div>
-
-                </div>
-                <div class="btn-wraper">
-                    <button class="card-btn">Add to Cart</button>
-                </div>
-
-            </div>
-            <div id="overlay"></div>
-            <!-- Product details modal end -->
 
         </section>
         <!-- products end -->

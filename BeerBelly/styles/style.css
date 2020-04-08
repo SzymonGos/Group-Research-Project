@@ -50,6 +50,17 @@ header {
     transition: color .2s ease-out;
 }
 
+.quantity {
+    position: relative;
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 9pt;
+    margin: 0;
+    padding: 0;
+    top: -10px;
+    letter-spacing: .5px;
+}
+
 .navicon:hover {
     color: #fdc23e;
 }
@@ -357,9 +368,53 @@ footer {
     grid-row: 2 / 12;
 }
 
-.reviews {
-    grid-column: 1 / 13;
-    grid-row: 12 / 15;
+.m-statement {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 2em;
+}
+
+.about .content {
+    padding: 20px 60px 20px 60px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.about .content:last-child {
+    justify-content: center;
+}
+
+.member {
+    width: 50%;
+}
+
+.member p {
+    font-size: 10pt;
+    display: flex;
+}
+
+.divL {
+    float: left;
+    box-sizing: border-box;
+    width: 30%;
+    padding: 10px;
+}
+
+.divR {
+    float: left;
+    box-sizing: border-box;
+    width: 70%;
+    padding: 40px 5px 5px 5px;
+    line-height: 1.3em;
+}
+
+.photo img {
+    width: 137px;
+    height: 137px;
+    border-radius: 50%;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -567,7 +622,10 @@ h4 {
     visibility: visible;
 }
 
+
+/* shopping cart */
+
 .cart {
     grid-column: 1 / 13;
-    grid-row: 2 / 10;
+    grid-row: 2 / 6;
 }
