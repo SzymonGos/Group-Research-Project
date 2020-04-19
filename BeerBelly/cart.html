@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <script defer src="javascripts/cart.js"></script>
+    <link rel="stylesheet" href="styles/cart.css">
+    <script defer src="javascripts/cart.js" async></script>
+    <script defer src="javascripts/checkout.js"></script>
     <title>Beer Belly</title>
 </head>
 
@@ -20,8 +22,8 @@
                 <nav>
                     <ul>
                         <li><a href="beers.html">Beers</a></li>
-                        <li><a href="otherDrinks.html">Other Drinks</a></li>
                         <li><a href="specialOffers.html">Special Offers</a></li>
+                        <li><a href="otherDrinks.html">Other Drinks</a></li>
                         <li><a href="aboutUs.html">About Us</a></li>
                         <li><a href="contactUs.html">Contact</a></li>
                     </ul>
@@ -52,14 +54,148 @@
                     <div class="product-header">
                         <h5 class="product-title">PRODUCT</h5>
                         <h5 class="product-price">PRICE</h5>
-                        <h5 class="product-qunatity">QUANTITY</h5>
-                        <h5 class="total">TOTAL</h5>
+                        <h5 class="product-quantity">QUANTITY</h5>
                     </div>
                 </div>
-            </div>
 
+
+                <!-- Cart Items-->
+                <div class="cart-items">
+
+                    <!-- Cart Row Item-->
+                    <div class="cart-row">
+                        <div class="cart-item cart-column">
+                            <div class="cart-item-image"></div>
+                            <span class="cart-item-title">Beer lol</span>
+                        </div>
+                        <span class="cart-price cart-column">£10.99</span>
+
+                        <!-- Quantity -->
+                        <div class="cart-quantity cart-column">
+                            <!-- <i class="fas fa-chevron-circle-left arrowL"></i> -->
+                            <input class="cart-quantity-input" type="number" value="1">
+                            <!-- <i class="fas fa-chevron-circle-right arrowR"></i> -->
+                            <i class="fas fa-times-circle btn btn-danger"></i>
+                        </div>
+                    </div>
+
+                    <!-- Cart Row Item-->
+                    <div class="cart-row">
+                        <div class="cart-item cart-column">
+                            <div class="cart-item-image"></div>
+                            <span class="cart-item-title">Beer mew</span>
+                        </div>
+                        <span class="cart-price cart-column">£12.99</span>
+
+                        <!-- Quantity -->
+                        <div class="cart-quantity cart-column">
+                            <!-- <i class="fas fa-chevron-circle-left arrowL"></i> -->
+                            <input class="cart-quantity-input" type="number" value="1">
+                            <!-- <i class="fas fa-chevron-circle-right arrowR"></i> -->
+                            <i class="fas fa-times-circle btn btn-danger"></i>
+                        </div>
+                    </div>
+
+                    <!-- Cart Row Item-->
+
+                    <div class="cart-row">
+                        <div class="cart-item cart-column">
+                            <div class="cart-item-image"></div>
+                            <span class="cart-item-title">Beer wow</span>
+                        </div>
+                        <span class="cart-price cart-column">£9.99</span>
+
+                        <!-- Quantity -->
+                        <div class="cart-quantity cart-column">
+                            <!-- <i class="fas fa-chevron-circle-left arrowL"></i> -->
+                            <input class="cart-quantity-input" type="number" value="2">
+                            <!-- <i class="fas fa-chevron-circle-right arrowR"></i> -->
+                            <i class="fas fa-times-circle btn btn-danger"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total:</strong>
+                        <span class="cart-total-price">£20.00</span>
+                    </div>
+                    <button id="btn-hide" class="btn-purchase" type="button" onclick="checkOut()">Checkout</button>
+                </div>
+            </div>
         </section>
-        <!-- Featured end-->
+        <!-- Cart end-->
+
+        <!-- Checkout start -->
+        <section class="check-out" id="payment-page">
+            <div class="content">
+                <div class="row-form">
+                    <div class="col-100">
+                        <div class="content-box">
+                            <form action="/">
+                                <div class="row-form">
+
+                                    <div class="col-50">
+                                        <h3>Billing Address</h3>
+                                        <label for="fname">Full Name</label>
+                                        <input class="details" type="text" id="fname" name="firstname" placeholder="Full  Name">
+                                        <label for="email">Email</label>
+                                        <input class="details" type="text" id="email" name="email" placeholder=" Email Address">
+                                        <label for="adr">Address</label>
+                                        <input class="details" type="text" name="address" id="adr" placeholder=" Address">
+                                        <label for="city">City</label>
+                                        <input class="details" type="text" name="city" id="city" placeholder="City">
+                                        <label for="postcode">Post Code</label>
+                                        <input class="details" type="text" id="post-code" name="post-code" placeholder="Post Code">
+                                    </div>
+
+                                    <div class="col-50">
+                                        <h3>Payment</h3>
+                                        <label for="fname">Accepted Cards</label>
+                                        <div class="cc-icons">
+
+                                            <i class="fab fa-cc-visa"></i>
+
+                                            <i class="fab fa-cc-mastercard"></i>
+
+                                            <i class="fab fa-cc-amex"></i>
+                                        </div>
+                                        <label for="cname">Name on Card</label>
+                                        <input class="details" type="text" id="cname" name="cardname" placeholder="Name On Card">
+
+                                        <label for="ccnum">Credit card number</label>
+                                        <input class="details" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+
+
+                                        <label for="expmonth">Exp Month</label>
+                                        <input class="details" type="text" name="" id="Month" placeholder="Month">
+
+                                        <div class="row-form">
+                                            <div class="col-25">
+                                                <label for="expyear">Exp Year</label>
+                                                <input class="details" type="text" name="expyear" id="expyear" placeholder="Year">
+                                            </div>
+                                            <div class="col-25">
+                                                <label for="cvv">CVV</label>
+                                                <input class="details" type="text" name="cvv" id="cvv" placeholder="CVV">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label>
+                                            <input class=" row-checkbox" type="checkbox" name="sameadr" checked="checked"> Shipping address same as billing.
+                                        </label>
+                                        <button class="btn-order" type="submit" value="payment">Place Order </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Checkout end -->
+
         <!-- Footer start-->
         <footer>Footer</footer>
         <!-- Footer end-->
