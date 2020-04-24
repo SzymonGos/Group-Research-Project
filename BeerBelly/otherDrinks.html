@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="css/all.min.css">
     <script defer src="javascripts/modal.js"></script>
-    <script defer src="/javascripts/slideshow.js"></script>
+
     <script defer src="/javascripts/banners.js"></script>
     <title>Beer Belly</title>
 </head>
@@ -88,88 +88,275 @@
         <!-- Products start -->
         <section class="other-products">
             <div class="content">
+
+
+                <!-- Card START -->
                 <div class="card">
                     <h2>Item Name</h2>
                     <div class="img"></div>
-                    <p class="price">£19.99</p>
+                    <p class="price">£10.00</p>
                     <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
                     <div class="btn-wraper">
                         <div class="btn-inline">
-                            <button class="card-btn">Add to Cart</button>
+                            <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal26" class="card-btn">Quick View</button>
                         </div>
                     </div>
                 </div>
+                <!-- Card END -->
 
-                <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£19.99</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
-                        <div class="btn-inline">
-                            <button class="card-btn">Add to Cart</button>
-                        </div>
-                        <div class="btn-inline">
-                            <button data-modal-target="#modal" class="card-btn">Quick View</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£19.99</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
-                        <div class="btn-inline">
-                            <button class="card-btn">Add to Cart</button>
-                        </div>
-                        <div class="btn-inline">
-                            <button data-modal-target="#modal" class="card-btn">Quick View</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Product details modal start -->
-                <div class="modal" id="modal">
+                <!-- Modal START -->
+                <!-- id="modalx" related to card button data-modal-target="#modalx" -->
+                <div class="modal" id="modal26">
                     <div class="modal-header">
-                        <div class="titlle">Example Item</div>
+                        <!-- change beer title -->
+                        <div class="titlle">Product Name</div>
                         <button class="brewery-link">Where's my brewery?</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
-                        <div class="column">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ea sapiente voluptate ipsum neque voluptas voluptatibus quam a numquam ab. Ex soluta corrupti perspiciatis veritatis molestiae in sit vitae adipisci optio illum quas
-                            laudantium esse porro sapiente neque maxime quia obcaecati, officia voluptas. Est dolore numquam vero a adipisci asperiores?</div>
                         <div class="column">
+                            <!-- add extended product description -->
+                            <p></p>
+                            <!-- Fill up product details -->
+                            <p> Prduct price: </p>
+                            <p> Product Volume:</p>
+                            <p> Prduct ABV: </p>
 
+                        </div>
+                        <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
-                                <div class="mySlide fade">
-                                    <div class="image">PHOTO 1</div>
-                                </div>
-                                <div class="mySlide fade">
-                                    <div class="image2">PHOTO 2</div>
-                                </div>
+                                <!-- add gif/video between div tags -->
+                                <div class="image "></div>
 
                                 <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
                             </div>
                         </div>
-
                     </div>
                     <div class="btn-wraper">
-                        <button class="card-btn">Add to Cart</button>
+                        <button class="card-btn add-cart"> Add to Cart </button>
+                    </div>
+                </div>
+                <!-- Modal END -->
+
+                <!-- Card START -->
+                <div class="card">
+                    <h2>Item Name</h2>
+                    <div class="img"></div>
+                    <p class="price">£10.00</p>
+                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
+                    <div class="btn-wraper">
+                        <div class="btn-inline">
+                            <button class="card-btn add-cart">Add to Cart</button>
+                        </div>
+                        <div class="btn-inline">
+                            <button data-modal-target="#modal27" class="card-btn">Quick View</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card END -->
+
+                <!-- Modal START -->
+                <!-- id="modalx" related to card button data-modal-target="#modalx" -->
+                <div class="modal" id="modal27">
+                    <div class="modal-header">
+                        <!-- change beer title -->
+                        <div class="titlle">Product Name</div>
+                        <button class="brewery-link">Where's my brewery?</button>
+                        <button data-close-button class="close-button">&times;</button>
                     </div>
 
+                    <div class="modal-body">
+                        <div class="column">
+                            <!-- add extended product description -->
+                            <p></p>
+                            <!-- Fill up product details -->
+                            <p> Prduct price: </p>
+                            <p> Product Volume:</p>
+                            <p> Prduct ABV: </p>
+
+                        </div>
+                        <div class="column">
+                            <!-- Slideshow container -->
+                            <div class="slideshow">
+                                <!-- add gif/video between div tags -->
+                                <div class="image"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wraper">
+                        <button class="card-btn add-cart"> Add to Cart </button>
+                    </div>
                 </div>
+                <!-- Modal END -->
+
+                <!-- Card START -->
+                <div class="card">
+                    <h2>Item Name</h2>
+                    <div class="img"></div>
+                    <p class="price">£10.00</p>
+                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
+                    <div class="btn-wraper">
+                        <div class="btn-inline">
+                            <button class="card-btn add-cart">Add to Cart</button>
+                        </div>
+                        <div class="btn-inline">
+                            <button data-modal-target="#modal28" class="card-btn">Quick View</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card END -->
+
+                <!-- Modal START -->
+                <!-- id="modalx" related to card button data-modal-target="#modalx" -->
+                <div class="modal" id="modal28">
+                    <div class="modal-header">
+                        <!-- change beer title -->
+                        <div class="titlle">Product Name</div>
+                        <button class="brewery-link">Where's my brewery?</button>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="column">
+                            <!-- add extended product description -->
+                            <p></p>
+                            <!-- Fill up product details -->
+                            <p> Prduct price: </p>
+                            <p> Product Volume:</p>
+                            <p> Prduct ABV: </p>
+
+                        </div>
+                        <div class="column">
+                            <!-- Slideshow container -->
+                            <div class="slideshow">
+                                <!-- add gif/video between div tags -->
+                                <div class="image"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wraper">
+                        <button class="card-btn add-cart"> Add to Cart </button>
+                    </div>
+                </div>
+                <!-- Modal END -->
+
+                <!-- Card START -->
+                <div class="card">
+                    <h2>Item Name</h2>
+                    <div class="img"></div>
+                    <p class="price">£10.00</p>
+                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
+                    <div class="btn-wraper">
+                        <div class="btn-inline">
+                            <button class="card-btn add-cart">Add to Cart</button>
+                        </div>
+                        <div class="btn-inline">
+                            <button data-modal-target="#modal29" class="card-btn">Quick View</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card END -->
+
+                <!-- Modal START -->
+                <!-- id="modalx" related to card button data-modal-target="#modalx" -->
+                <div class="modal" id="modal29">
+                    <div class="modal-header">
+                        <!-- change beer title -->
+                        <div class="titlle">Product Name</div>
+                        <button class="brewery-link">Where's my brewery?</button>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="column">
+                            <!-- add extended product description -->
+                            <p></p>
+                            <!-- Fill up product details -->
+                            <p> Prduct price: </p>
+                            <p> Product Volume:</p>
+                            <p> Prduct ABV: </p>
+
+                        </div>
+                        <div class="column">
+                            <!-- Slideshow container -->
+                            <div class="slideshow">
+                                <!-- add gif/video between div tags -->
+                                <div class="image"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wraper">
+                        <button class="card-btn add-cart"> Add to Cart </button>
+                    </div>
+                </div>
+                <!-- Modal END -->
+
+                <!-- Card START -->
+                <div class="card">
+                    <h2>Item Name</h2>
+                    <div class="img"></div>
+                    <p class="price">£10.00</p>
+                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
+                    <div class="btn-wraper">
+                        <div class="btn-inline">
+                            <button class="card-btn add-cart">Add to Cart</button>
+                        </div>
+                        <div class="btn-inline">
+                            <button data-modal-target="#modal30" class="card-btn">Quick View</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card END -->
+
+                <!-- Modal START -->
+                <!-- id="modalx" related to card button data-modal-target="#modalx" -->
+                <div class="modal" id="modal30">
+                    <div class="modal-header">
+                        <!-- change beer title -->
+                        <div class="titlle">Product Name</div>
+                        <button class="brewery-link">Where's my brewery?</button>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="column">
+                            <!-- add extended product description -->
+                            <p></p>
+                            <!-- Fill up product details -->
+                            <p> Prduct price: </p>
+                            <p> Product Volume:</p>
+                            <p> Prduct ABV: </p>
+
+                        </div>
+                        <div class="column">
+                            <!-- Slideshow container -->
+                            <div class="slideshow">
+                                <!-- add gif/video between div tags -->
+                                <div class="image"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wraper">
+                        <button class="card-btn add-cart"> Add to Cart </button>
+                    </div>
+                </div>
+                <!-- Modal END -->
+
+                <!-- Overlay for modals start -->
                 <div id="overlay"></div>
-                <!-- Product details modal end -->
+                <!-- Overlay for modals end -->
+
             </div>
         </section>
         <!-- Products end -->
@@ -206,6 +393,5 @@
     </div>
 
 </body>
-<script type="text/javascript" src="script.js"></script>
 
 </html>
