@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <script defer src="javascripts/script.js"></script>
+    <script defer src="javascripts/register.js"></script>
     <title>Beer Belly</title>
     <script defer src="script.js"></script>
 </head>
@@ -30,14 +30,14 @@
 
                     <!-- Seaarch field -->
                     <div class="search-container">
-                        <form action="/">
+                        <form action="beers.html">
                             <input type="text" placeholder="Search.." name="search">
                             <button type="submit"> <i class="fas fa-search search-icon"></i></button>
                         </form>
                     </div>
                     <!-- Search field end-->
 
-                    <a href="cart.html"> <i class="fas fa-shopping-basket inline navicon"></i></a>
+                    <a href="cart.html"> <i class="fas fa-shopping-basket inline navicon"><span class="quantity">0</span></i></a>
                     <a href="my-account.html"><i class="far fa-user inline navicon"></i></a>
                     <a href="#"> <i class="far fa-star inline navicon"></i></a>
                 </nav>
@@ -155,6 +155,7 @@
         <!-- Footer end-->
     </div>
 
+    <script src="/javascripts/cart.js"></script>
 </body>
 
 </html>

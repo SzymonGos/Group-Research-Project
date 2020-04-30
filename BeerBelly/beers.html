@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/all.min.css">
     <script defer src="javascripts/modal.js"></script>
     <script defer src="/javascripts/banners.js"></script>
-    <script defer src="javascripts/slideshow.js"></script>
     <title>Beer Belly</title>
 </head>
 
@@ -31,7 +30,7 @@
 
                     <!-- Seaarch field -->
                     <div class="search-container">
-                        <form action="/">
+                        <form action="beers.html">
                             <input type="text" placeholder="Search.." name="search" id="textsend">
                             <button type="submit" id="search-btn"> <i class="fas fa-search search-icon"></i></button>
                         </form>
@@ -250,19 +249,20 @@
         <section class="products">
             <div class="content">
 
+                <!-- 01 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£6.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Brewdog - Punk IPA <br><br></h2>
+                    <img class="img" src="img/products/BrewDog_Punk_IPA_Can.png">
+                    <h4 class="price">£2.50</h4>
+                    <p>Citrusy, fruity IPA by Brewdog sure to set all those punk hearts aflame.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <!-- related to modal -->
-                            <button data-modal-target="#modal1" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal1" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
@@ -272,53 +272,46 @@
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal1">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Punk IPA</div>
+                        <button class="brewery-link">Brewdog</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
-
                     <div class="modal-body">
                         <div class="column">
-                            <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                BrewDog’s flagship IPA. Layered with new world hops to create an explosion of tropical fruit and an all-out riot of grapefruit, pineapple and lychee before a spiky bitter finish, this is transatlantic fusion running at the fences of lost empires. Nothing
+                                will ever be the same again.
+                            </p>
+                            <p> Prduct price: £2.50 </p>
+                            <p> Product Volume: 330ml </p>
+                            <p> Prduct ABV: 5.6%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"><video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282347/BrewDog_Punk_IPA_Can_1587899755.mp4" type="video/mp4">Your browser does not support the video tag.</video><br/></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 02 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Beavertown – Neck Oil Session IPA</h2>
+                    <img class="img" src="img/products/Beavertown___Neck_Oil_Session_IPA.png">
+                    <h4 class="price">£3.00</h4>
+                    <p>SCitrusy & fruity IPA that’s light and crisp on the palette another success from Beavertown.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal2" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal2" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
@@ -328,53 +321,49 @@
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal2">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Neck Oil Session IPA</div>
+                        <button class="brewery-link">Beavertown</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
-                            <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                Picture sucking a few of these down in front of the barbecue in a park on a sun-shiny day – that’s this beer’s raison d’etre. Light, crisp and refreshing with punchy notes of citrus peel and light pine, Neck Oil is nicely balanced with slightly sweet
+                                biscuity malt throughout, finishing with a medium grapefruit bitterness. And at 4.3%, this is surely one you can sit on all day.
+                            </p>
+                            <p> Prduct price: £3.00 </p>
+                            <p> Product Volume: 330ml </p>
+                            <p> Prduct ABV: 4.3%</p>
+
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282365/Beavertown___Neck_Oil_Session_IPA_1587899869.mp4" type="video/mp4">Your browser does not support the video tag.</video><br/>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 03 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Siren – Soundwave IPA</h2>
+                    <img class="img" src="img/products/Siren___Soundwave_IPA_Bottle.png">
+                    <h4 class="price">£3.50</h4>
+                    <p>Dangerously drinkable IPA, tropical fruit sweetness that is perfectly balanced with a bitter element.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal3" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal3" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
@@ -384,53 +373,51 @@
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal3">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Soundwave IPA</div>
+                        <button class="brewery-link">Siren</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                The driest of Sirens regulars, Soundwave smacks you about with intense grapefruit, peach and mango hop flavours before leading into a lengthy, dry and resinous finish. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich
+                                or a citrusy stir-fry.
+                            </p>
+                            <p> Prduct price: £3.50 </p>
+                            <p> Product Volume: 330ml </p>
+                            <p> Prduct ABV: 5.6%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282367/Siren___Soundwave_IPA_Bottle_1587899918.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
 
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 04 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
+
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Naparbier – Hop Shine New England IPA</h2>
+                    <img class="img" src="img/products/Naparbier___Hop_Shine_New_England_IPA_Bottle.png">
+                    <h4 class="price">£5.50</h4>
+                    <p>A good floral/herbal IPA made with love and very tasty.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal4" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal4" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
@@ -440,109 +427,103 @@
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal4">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Hop Shine New England IPA</div>
+                        <button class="brewery-link">Naparbier</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                PA good Hazy IPA from Spain, best had when out and enjoying the sunshine with floral notes and a herbal undertone. One to watch right here!
+                            </p>
+                            <p> Prduct price: £5.50 </p>
+                            <p> Product Volume: 440ml </p>
+                            <p> Prduct ABV: 6.8%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282370/Naparbier___Hop_Shine_New_England_IPA_Bottle_1587900022.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
-                    </div>
                 </div>
                 <!-- Modal END -->
+                <!-- 05 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
 
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Magic Rock – Saucery Session IPA</h2>
+                    <img class="img" src="img/products/Magic_Rock___Saucery_Session_IPA_Can.png">
+                    <h4 class="price">£3.50</h4>
+                    <p>Proper tasty session beer. The taste of pine lingers afterwards.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal5" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal5" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Card END -->
 
                 <!-- Modal START -->
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal5">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Saucery Session IPA</div>
+                        <button class="brewery-link">Magic Rock</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                From the brewery: A supernatural gluten-free session IPA made for drinking all day long. Lightly sweet and malty Golden Promise™ malt, a balanced bitterness and layers of tropical fruit filled Citra and Ekuanot hops in whirlpool and dry hop. Fermented
+                                with London Fog Ale yeast to add fruitier body and enhanced malt and hop profile.
+                            </p>
+                            <p> Prduct price: £3.50 </p>
+                            <p> Product Volume: 330ml </p>
+                            <p> Prduct ABV: 3.9%</p>
+
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282407/Magic_Rock___Saucery_Session_IPA_Can_1587900128.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
-                    </div>
+
                 </div>
                 <!-- Modal END -->
 
+                <!-- 06 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Peroni – Nastro Azzurro</h2>
+                    <img class="img" src="img/products/Peroni___Nastro_Azzurro_Bottle.png">
+                    <h4 class="price">£4.00</h4>
+                    <p>Crisp and refreshing lager with unmistakable character.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal6" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal6" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
@@ -552,53 +533,50 @@
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal6">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Peroni Nastro Azzurro</div>
+                        <button class="brewery-link">Peroni</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                Only ever made and bottled in Italy at theiur breweries in Rome, Bari and Padova, Peroni Nastro Azzurro is brewed using the creativity and flair of Italians. Blending the finest hops with two-row spring planted barley and a quarter of Italian maize results
+                                in a beer with a uniquely crisp and refreshing taste. Brewed in Italy since 1963, a delicate balance of bitterness and citrus aromatic notes with a crisp, dry finish.
+                            </p>
+                            <p> Prduct price: £4.00 </p>
+                            <p> Product Volume: 620ml </p>
+                            <p> Prduct ABV: 5.1%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282416/Peroni___Nastro_Azzurro_Bottle_1587900238.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
 
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
                             </div>
                         </div>
                     </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
-                    </div>
+
                 </div>
                 <!-- Modal END -->
-
+                <!-- 07 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Heineken Lager</h2>
+                    <img class="img" src="img/products/Heineken_Lager_Bottle.png">
+                    <h4 class="price">£3.00</h4>
+                    <p>That classic Heineken taste you know and love.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal7" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal7" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
@@ -608,53 +586,50 @@
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal7">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Heineken Lager</div>
+                        <button class="brewery-link">Heineken</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
+
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                You know it, you love it, it’s that classic green bottle of Heineken perfection. A great beer to be enjoyed at any time of year. Grab one today and add another green bottle to your collection.
+                            </p>
+                            <p> Prduct price: £3.00 </p>
+                            <p> Product Volume: 650ml </p>
+                            <p> Prduct ABV: 5.0%</p>
+
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282433/Heineken_Lager_Bottle_1587900300.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 08 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Kronenbourg – 1664</h2>
+                    <img class="img" src="img/products/Kronenbourg___1664_Lager_Bottle.png">
+                    <h4 class="price">£4.50</h4>
+                    <p>Light clean grapefruit and hint of candy fruit.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal8" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal8" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
@@ -664,221 +639,206 @@
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal8">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">1664</div>
+                        <button class="brewery-link">Kronenbourg</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
-
+                            <p>
+                                Kronenbourg 1664's pleasure is in its light lemon and herbal flavours from the Alsace hops, and clean bittersweet finish. Kronenbourg 1664 is a Premium Lager at 5.0%. It is brewed with the aromatic Strisselspalt hop from Alsace, which gives it a unique
+                                aroma and satisfying taste. All of which makes it the superior tasting premium lager. Kronenbourg 1664 is a full bodied, golden, bittersweet lager with a distinct citrus hop flavour. A Taste Supreme.
+                            </p>
+                            <p> Prduct price: £4.50 </p>
+                            <p> Product Volume: 660ml </p>
+                            <p> Prduct ABV: 5.0%</p>
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282469/Kronenbourg___1664_Lager_Bottle_1587900457.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
-                    </div>
+
                 </div>
                 <!-- Modal END -->
 
-
+                <!-- 09 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Brooklyn Lager</h2>
+                    <img class="img" src="img/products/Brooklyn_Lager_Bottle.png">
+                    <h4 class="price">£4.00</h4>
+                    <p>Unites traditional flavors of toffee, toast, caramel and a dry-hopped aroma full of grapefruit, flowers and pine.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal9" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal9" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Card END -->
 
                 <!-- Modal START -->
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal9">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Brooklyn Lager</div>
+                        <button class="brewery-link">Brooklyn Brewery</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                Brooklyn Lager is amber-gold in colour and displays a firm malt centre supported by a refreshing bitterness and floral hop aroma, with caramel malts in the finish. The aromatic qualities of the beer are enhanced by “dry-hopping”, the centuries-old practice
+                                of steeping the beer with fresh hops as it undergoes a long, cold maturation. In the late 1800's Brooklyn was one of the largest brewing centres in the country, home to more than 45 breweries.
+                            </p>
+                            <p> Prduct price: £4.00 </p>
+                            <p> Product Volume: 660ml </p>
+                            <p> Prduct ABV: 5.2%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282489/Brooklyn_Lager_Bottle_1587900622.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 10 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Sol Lager <br><br></h2>
+                    <img class="img" src="img/products/Sol__Lager_Beer_Bottle.png">
+                    <h4 class="price">£3.50</h4>
+                    <p>A classic Mexican light beer that’s good for parties and food.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal10" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal10" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
                 <!-- Card END -->
+
                 <!-- Modal START -->
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal10">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Sol</div>
+                        <button class="brewery-link">Sol</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
-
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                Sol is the authentic Mexican beer, born in 1899 in Orizba, near the highest point in Mexico. The original brewer discovered a refreshing and light recipe that is still used to this day. Rays of sunlight peeped through the breweries roof onto the transparent
+                                bottle inspiring the name Sol, in honour of the sun. Sol uses special light resistant hops that preserve the refreshing taste even on the sunniest of days.
+                            </p>
+                            <p> Prduct price: £3.50 </p>
+                            <p> Product Volume: 650ml </p>
+                            <p> Prduct ABV: 4.2%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282494/Sol__Lager_Beer_Bottle_1587900720.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
 
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 11 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Wiper and True – Milk Shake Stout</h2>
+                    <img class="img" src="img/products/Wiper_and_True___Milk_Shake_Stout_Can.png">
+                    <h4 class="price">£2.50</h4>
+                    <p>A rich & creamy stout with great flavour.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal11" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal11" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Card END -->
 
                 <!-- Modal START -->
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal11">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Milk Shake Stout</div>
+                        <button class="brewery-link">Wiper and True</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                Copious chocolate malts laced with vanilla to create a luxurious, milkshake-rich dark beer.
+                            </p>
+                            <p> Prduct price: £2.50 </p>
+                            <p> Product Volume: 330ml </p>
+                            <p> Prduct ABV: 5.6%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282496/Wiper_and_True___Milk_Shake_Stout_Can_1587900831.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 12 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>O Brother – The Nightcrawler Milk Stout</h2>
+                    <img class="img" src="img/products/O_Brother___The_Nightcrawler_Milk_Stout_Can.png">
+                    <h4 class="price">£3.50</h4>
+                    <p>Straight and simple good milk stout. Give it a go!</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal12" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal12" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
@@ -888,166 +848,156 @@
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal12">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">The Nightcrawler Milk Stout</div>
+                        <button class="brewery-link">O Brother</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                As with their session IPA it is solid as hell and gives you everything you want from the style but with an absolute drink ability. You could quite easily drink four or five of these in a row. This Stout is lovingly brewed by the fantastic O Brother.
+                            </p>
+                            <p> Prduct price: £3.50 </p>
+                            <p> Product Volume: 330ml </p>
+                            <p> Prduct ABV: 4.8%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282497/O_Brother___The_Nightcrawler_Milk_Stout_Can_1587900864.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
-
+                <!-- 13 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Cloudwater & Rock Leopard – Step Up English Stout</h2>
+                    <img class="img" src="img/products/Cloudwater___Rock_Leopard___Step_Up_English_Stout.png">
+                    <h4 class="price">£4.00</h4>
+                    <p>A new take on Stout for a good cause.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal13" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal13" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Card END -->
 
                 <!-- Modal START -->
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal13">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Step Up English Stout</div>
+                        <button class="brewery-link">Cloudwater & Rock Leopard</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                Hold on a second! It’s 2020 and we’re not here to talk diversity, we’re here to make a difference. Step Up is a delicious beer that is gonna help change who the beer industry represents, and what it needs to be. With 5% of the proceeds donated to charities
+                                and causes that help those facing society’s biggest hurdles, and the remaining proceeds split 50/50 between Rock Leopard and Cloudwater, every can and every glass helps us make a difference.
+                            </p>
+                            <p> Prduct price: £4.00 </p>
+                            <p> Product Volume: 330ml </p>
+                            <p> Prduct ABV: 5.0%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282537/TinyTake26-04-2020-02-42-54.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 14 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Siren – Sins Forbidden Apple Stout</h2>
+                    <img class="img" src="img/products/Siren___Sins_Forbidden_Apple_Stout_Can.png">
+                    <h4 class="price">£3.00</h4>
+                    <p>Cider meets beer in a stout? Strange but devilishly enjoyable. </p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal14" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal14" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Card END -->
 
                 <!-- Modal START -->
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal14">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Sins Forbidden Apple Stout</div>
+                        <button class="brewery-link">Siren Brewery</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
+
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                This 7th Anniversary Celebration takes inspiration from the seven deadly sins. Using some artistic license and 1000l of Apple Juice, ‘Sins’ is a beer/cider hybrid, a style sometimes referred to as a Graf. Even more unusually, we’ve taken this concept
+                                into a robust stout recipe!
+                            </p>
+                            <p> Prduct price: £3.00 </p>
+                            <p> Product Volume: 330ml </p>
+                            <p> Prduct ABV: 6.66%</p>
+
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282567/Siren___Sins_Forbidden_Apple_Stout_Can_1587901447_1587901769.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 15 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Barrier – Morticia Oak Aged Imperial Stout</h2>
+                    <img class="img" src="img/products/Barrier___Morticia_Oak_Aged_Imperial_Stout_Bottle.png">
+                    <h4 class="price">£9.00</h4>
+                    <p>A beautiful smooth dark stout with lovely balance.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal15" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal15" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
@@ -1057,53 +1007,49 @@
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal15">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Morticia Oak Aged Imperial Stout</div>
+                        <button class="brewery-link">Barrier Brewery</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                Morticia is generally aged in oak. Morticia is the end. Once experienced, other beer is bland and insipid. Black as a moonless night, her aroma tempting, her strength deceptively powerful. She is unrestrained at youth and learns mercy only with time.
+                                Morticia overpowers the senses, then warms the soul. Nursing each sip, you will be transformed. And as you reach the height of her enchantment, the pinnacle of ecstasy; she will break your neck and eat you.
+                            </p>
+                            <p> Prduct price: £9.00 </p>
+                            <p> Product Volume: 473ml </p>
+                            <p> Prduct ABV: 10.1%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282588/Barrier___Morticia_Oak_Aged_Imperial_Stout_Bottle_1587901894.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 16 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Beavertown – Gamma Ray Pale Ale</h2>
+                    <img class="img" src="img/products/Beavertown___Gamma_Ray_Pale_Ale_Can.png">
+                    <h4 class="price">£3.00</h4>
+                    <p>Crisp and clean, classic American pale ale.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal16" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal16" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
@@ -1113,53 +1059,50 @@
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal16">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Gamma Ray Pale Ale</div>
+                        <button class="brewery-link">Beavertown Brewery</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                The concept was to create a juicy tropical beer. A brew you can sit on and drink all day, rammed with juicy malts and huge tropical aromas of mango and grapefruit. Massive additions of whole leaf American hops are added in ever increasing numbers at the
+                                end of the boil giving huge hop flavour. The beer is then dry hopped for days, driving the punchy aromas so you can smell it from miles away!
+                            </p>
+                            <p> Prduct price: £3.00 </p>
+                            <p> Product Volume: 330ml </p>
+                            <p> Prduct ABV: 5.4%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282777/Beavertown___Gamma_Ray_Pale_Ale_Can_1587902802.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
 
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 17 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Pressure Drop – Pale Fire Pale Ale</h2>
+                    <img class="img" src="img/products/Pressure_Drop___Pale_Fire_Pale_Ale_Can.png">
+                    <h4 class="price">£2.50</h4>
+                    <p>Nice fruity session pale. Great for a summer BBQ.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal17" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal17" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
@@ -1169,53 +1112,49 @@
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal17">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Pale Fire Pale Ale</div>
+                        <button class="brewery-link">Pressure Drop Brewery</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                Pressure Drop like to mix up the aroma hops in their Pale fire and you’ll find that Pale Fire can come in different versions. It’s been hopped with Mosaic and Amarillo, Amarillo and Citra, Nelson Sauvin and others including the legendary Hop X, an English
+                                trial-hop being developed by Dr Peter Darby at Wye Hops.
+                            </p>
+                            <p> Prduct price: £2.50 </p>
+                            <p> Product Volume: 330ml </p>
+                            <p> Prduct ABV: 5.2%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282780/Pressure_Drop___Pale_Fire_Pale_Ale_Can_1587902851.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 18 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Windsor & Eton – Guardsman Bitter</h2>
+                    <img class="img" src="img/products/Windsor___Eton___Guardsman_Bitter_Bottle.png">
+                    <h4 class="price">£2.50</h4>
+                    <p>The Windsor & Eton Classic that everyone knows and loves.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal18" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal18" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
@@ -1225,108 +1164,103 @@
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal18">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Guardsman Bitter</div>
+                        <button class="brewery-link">Windsor & Eton Brewery</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                The first beer brewed in Windsor for more than 80 years was launched on St George’s Day 2010 – it remains one of our best sellers to this day. A lovely copper coloured session strength ale with a tangy taste, yet a really smooth fresh hop finish, ensuring
+                                that it is very ‘quaffable’.
+                            </p>
+                            <p> Prduct price: £2.50 </p>
+                            <p> Product Volume: 500ml </p>
+                            <p> Prduct ABV: 4.2%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282798/Windsor___Eton___Guardsman_Bitter_Bottle_1587902911.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
 
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 19 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Marlow Brewery – Rebellion Red Ale</h2>
+                    <img class="img" src="img/products/Marlow_Brewery___Rebellion_Red_Ale_Bottle.png">
+                    <h4 class="price">£4.00</h4>
+                    <p>A deep Red Ale that pairs perfectly with a good steak.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal19" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal19" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
                 <!-- Card END -->
+
                 <!-- Modal START -->
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal19">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Rebellion Red Ale</div>
+                        <button class="brewery-link">Marlow Brewery</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
-
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                One of the five seasonal ales delivered by the award-winning Rebellion Beer Company, the Red Ale is a perfect complement to autumnal evenings. Its deep, crimson hue is enriched with a blend of crystal and roasted malts giving the beer its rich flavour,
+                                while the Goldings, Fuggles and Cascade hops balance it with a dose of citrus and fruit aftertaste.
+                            </p>
+                            <p> Prduct price: £4.00 </p>
+                            <p> Product Volume: 500ml </p>
+                            <p> Prduct ABV: 4.5%</p>
+
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282802/Marlow_Brewery___Rebellion_Red_Ale_Bottle_1587902967.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
 
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 20 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Magic Rock – Inhaler Hoppy Pale Ale</h2>
+                    <img class="img" src="img/products/Magic_Rock___Inhaler_Hoppy_Pale_Ale_Can.png">
+                    <h4 class="price">£2.00</h4>
+                    <p>Well balanced between “hoppy-ness” and malt flavours. Put’s us in a Hoppy Place.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal20" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal20" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
@@ -1336,109 +1270,101 @@
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal20">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Inhaler Hoppy Pale Ale</div>
+                        <button class="brewery-link">Magic Rock Brewery</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                Things move quickly in the beer world and Magic Rock’s latest pale ale/IPA hybrid is designed to showcase some of the newer hop varieties which work so well in modern hop forward beers. Pale malt, a little wheat, a little crystal malt, low bitterness
+                                and then six different hops! Super fruity, super ripe, super juicy and super drinkable. Breathe it in!
+                            </p>
+                            <p> Prduct price: £2.00 </p>
+                            <p> Product Volume: 330ml </p>
+                            <p> Prduct ABV: 4.5%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282806/Magic_Rock___Inhaler_Hoppy_Pale_Ale_Can_1587903010.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 21 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Budvar – Original Czech Pilsner</h2>
+                    <img class="img" src="img/products/Budvar___Original_Czech_Pilsner_Bottle.png">
+                    <h4 class="price">£2.50</h4>
+                    <p>This Lager is lovingly brewed by the fantastic Budvar. </p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal21" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal21" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Card END -->
 
                 <!-- Modal START -->
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal21">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Original Czech Pilsner</div>
+                        <button class="brewery-link">Budvar Brewery</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                Budweiser Budvar is the original and is brewed in the Czech Republic in the town of Budweis. It is owned by the people of the Czech Republic. And what a lovely Pilsner they’ve created for us!
+                            </p>
+                            <p> Prduct price: £2.50 </p>
+                            <p> Product Volume: 330ml </p>
+                            <p> Prduct ABV: 5.0%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282822/Budvar___Original_Czech_Pilsner_Bottle_1587903091.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 22 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Magic Rock – Dancing Bier Bavarian Pils</h2>
+                    <img class="img" src="img/products/Magic_Rock___Dancing_Bier_Bavarian_Pils_Can.png">
+                    <h4 class="price">£2.50</h4>
+                    <p>Clean, refreshing, pleasantly crisp, malty sweet, average carbonation, thin body.</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal22" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal22" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
@@ -1448,53 +1374,49 @@
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal22">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Dancing Bier Bavarian Pils</div>
+                        <button class="brewery-link">Magic RockBrewery</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                Magic Rock’s first take on this beer style. Lager, Munich and Cara malts create the pale colour and classic backbone, while a concoction of Germany’s finest Strisselspalt, Herrsbrucker and Hallertau hops deliver bitterness and herbal hit. A lightness
+                                of body and spritzy carbonation makes the beer dance on your palate while a big whack of aromatic dry hopping gives this Bavarian bear its claws…. PROST!
+                            </p>
+                            <p> Prduct price: £2.50 </p>
+                            <p> Product Volume: 330ml </p>
+                            <p> Prduct ABV: 4.5%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282828/Magic_Rock___Dancing_Bier_Bavarian_Pils_Can_1587903212.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 23 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>Finback – Crispy Days Pilsner</h2>
+                    <img class="img" src="img/products/Finback___Crispy_Days_Pilsner_Can.png">
+                    <h4 class="price">£8.00</h4>
+                    <p>For the Pilsner lovers this smashes it! Light, crisp, clean, slightly hoppy & the right sweetness!</p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal23" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal23" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
@@ -1504,109 +1426,100 @@
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal23">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Crispy Days Pilsner</div>
+                        <button class="brewery-link">Finback Brewery</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
-
+                            <p>
+                                This Pilsner is lovingly brewed by the fantastic Finback. Crispy Pilsner dry hopped with Tettnanger, EKG, Herkules and Saaz. This is our staple Pilsner in the summertime! Sure to make a great splash at your next event.
+                            </p>
+                            <p> Prduct price: £8.00 </p>
+                            <p> Product Volume: 473ml </p>
+                            <p> Prduct ABV: 4.9%</p>
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282831/Finback___Crispy_Days_Pilsner_Can_1587903239.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 24 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
                 <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                    <h2>The Bruery – Birdie Birdie Saison Yeast BA Pilsner</h2>
+                    <img class="img" src="img/products/The_Bruery___Birdie_Birdie_Saison_Yeast_BA_Pilsner_Can.png">
+                    <h4 class="price">£11.00</h4>
+                    <p>Great Pilsner with a big hit and great pedigree. </p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal24" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal24" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
+
                 <!-- Card END -->
 
                 <!-- Modal START -->
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal24">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Birdie Birdie Saison Yeast BA Pilsner</div>
+                        <button class="brewery-link">The Bruery</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                The second part of a collaboration series with our good friends and neighbours from Green Cheek Beer co. Birdie Birdie was aged in French Oak puncheons, fermented with Trois yeast, and then lagered for six weeks prior to dry hopping. The result was worth
+                                the wait. An easy drinking, mixed culture Saison-Style Pilsner – slightly hopped, a tad salty, with a refreshing citrus edge.
+                            </p>
+                            <p> Prduct price: £11.00 </p>
+                            <p> Product Volume: 473ml </p>
+                            <p> Prduct ABV: 7.6%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282832/The_Bruery___Birdie_Birdie_Saison_Yeast_BA_Pilsner_Can_1587903265.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
 
+                <!-- 25 ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- -->
                 <!-- Card START -->
-                <div class="card">
-                    <h2>Item Name</h2>
-                    <div class="img"></div>
-                    <p class="price">£10.00</p>
-                    <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                    <div class="btn-wraper">
+                <div class="card-long">
+                    <h2>Signature Brew – Studio Pilsner</h2>
+                    <img class="img" src="img/products/Signature_Brew___Studio_Pilsner_Can.png">
+                    <h4 class="price">£2.50</h4>
+                    <p>Somewhat crisp and slightly tart with pale malt, subtle saison yeast, slight funkiness, hint of spritz wine, almost flat carbonation. Too weird for a pilsner but it works better than expected. </p>
+                    <div class="btns-wraper">
                         <div class="btn-inline">
                             <button class="card-btn add-cart">Add to Cart</button>
                         </div>
                         <div class="btn-inline">
-                            <button data-modal-target="#modal25" class="card-btn">Quick View</button>
+                            <button data-modal-target="#modal25" class="card-btn">More Info</button>
                         </div>
                     </div>
                 </div>
@@ -1616,37 +1529,32 @@
                 <!-- id="modalx" related to card button data-modal-target="#modalx" -->
                 <div class="modal" id="modal25">
                     <div class="modal-header">
-                        <!-- change beer title -->
-                        <div class="titlle">Product Name</div>
-                        <button class="brewery-link">Where's my brewery?</button>
+                        <div class="titlle">Studio Pilsner</div>
+                        <button class="brewery-link">Signature Brew</button>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
 
                     <div class="modal-body">
                         <div class="column">
                             <!-- add extended product description -->
-                            <p></p>
-                            <!-- Fill up product details -->
-                            <p> Prduct price: </p>
-                            <p> Product Volume:</p>
-                            <p> Prduct ABV: </p>
+                            <p>
+                                Based on one of the most traditional styles of beer in the world, Studio Pilsner is an homage to time and refinement. The highest quality European ingredients combined with impeccable patience result in the perfect, light lager. Noble hop Saaz and a touch
+                                of rye work in tandem to provide enticing subtle flavours and a well-rounded body, the aroma holds floral hints followed by a pleasing bitterness.
+                            </p>
+                            <p> Prduct price: £2.50 </p>
+                            <p> Product Volume: 330ml </p>
+                            <p> Prduct ABV: 4.0%</p>
 
                         </div>
                         <div class="column">
                             <!-- Slideshow container -->
                             <div class="slideshow">
                                 <!-- add gif/video between div tags -->
-                                <div class="image product-slide fade"></div>
-                                <div class="image2 product-slide fade"></div>
-
-                                <!-- Next and previous buttons -->
-                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                <div class="image"> <video width="90%" height="90%" controls autoplay><source src="https://ttprivatenew.s3.amazonaws.com/pulse/kaloyan-4/attachments/13282836/Signature_Brew___Studio_Pilsner_Can_1587903310.mp4" type="video/mp4">Your browser does not support the video tag.</video><br
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-wraper">
-                        <button class="card-btn add-cart"> Add to Cart </button>
                     </div>
                 </div>
                 <!-- Modal END -->
@@ -1691,7 +1599,7 @@
         </footer>
         <!-- Footer end-->
     </div>
-
+    <script src="/javascripts/cart.js"></script>
 </body>
 
 </html>

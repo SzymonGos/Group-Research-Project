@@ -17,6 +17,7 @@
         <a class="logo_wraper" href="index.html"><img class="logo" src="img/logo.svg" alt="logo"></a>
         <header>
             <div class="container">
+                <!-- Links start-->
                 <nav>
                     <ul>
                         <li><a href="beers.html">Beers</a></li>
@@ -25,20 +26,22 @@
                         <li><a href="aboutUs.html">About Us</a></li>
                         <li><a href="contactUs.html">Contact</a></li>
                     </ul>
+                    <!-- Links end -->
 
-                    <!-- Seaarch field -->
+                    <!-- Seaarch field start -->
                     <div class="search-container">
-                        <form action="/">
+                        <form action="beers.html">
                             <input type="text" placeholder="Search.." name="search" id="textsend">
                             <button type="submit"> <i class="fas fa-search search-icon"></i></button>
                         </form>
                     </div>
-                    <!-- Search field end-->
+                    <!-- Search field end -->
 
-                    <a href="cart.html"> <i class="fas fa-shopping-basket inline navicon"></i></a>
+                    <!-- Navigation bar icons start -->
+                    <a href="cart.html"> <i class="fas fa-shopping-basket inline navicon"><span class="quantity">0</span></i></a>
                     <a href="my-account.html"><i class="far fa-user inline navicon"></i></a>
                     <a href="#"> <i class="far fa-star inline navicon"></i></a>
-
+                    <!-- Navigation bar icons end -->
                 </nav>
             </div>
         </header>
@@ -70,20 +73,19 @@
             <h2>Most popular</h2>
         </section>
         <div class="cat1">
+
             <div class="card">
-                <h2>Item Name</h2>
+                <h2> <br> Barrier - Morticia Oak Aged Imperial Stout Can</h2>
                 <div class="img">
-                    <div class="img">
-                        <div class="badge">
-                            <h5>staff pick</h5>
-                        </div>
+                    <div class="badge">
+                        <h5>staff pick</h5>
                     </div>
+                    <img class="img" src="img/products/Barrier___Morticia_Oak_Aged_Imperial_Stout_Can.png">
                 </div>
-                <p class="price">£6.00</p>
-                <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                <div class="btn-wraper">
+                <h3 class="price">£9.00</h3>
+                <div class="btns-wraper">
                     <div class="btn-block">
-                        <button class="card-btn add-cart">Add to Cart</button>
+                        <button class="card-btn">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -93,34 +95,36 @@
 
         <div class="cat2">
             <div class="card">
-                <h2>Item Name</h2>
+                <h2> <br><br> Heineken<br><br></h2>
                 <div class="img">
                     <div class="badge">
                         <h5>staff pick</h5>
                     </div>
+                    <img class="img" src="img/products/Heineken_Lager_Can.png">
                 </div>
-                <p class="price">£6.00</p>
-                <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                <div class="btn-wraper">
+                <h3 class="price">£2.50</h3>
+
+                <div class="btns-wraper">
                     <div class="btn-block">
-                        <button class="card-btn add-cart">Add to Cart</button>
+                        <button class="card-btn">Add to Cart</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="cat3">
             <div class="card">
-                <h2>Item Name</h2>
+                <h2> <br> Naparbier - Hop Shine New England IPA Can <br><br></h2>
                 <div class="img">
                     <div class="badge new-item">
                         <h5>new</h5>
                     </div>
+                    <img class="img" src="img/products/Naparbier___Hop_Shine_New_England_IPA_Can.png">
                 </div>
-                <p class="price">£6.00</p>
-                <p>Some text about the beer. The kind of beer you’d wanna suck down while chowing on a tasty salt beef sandwich or a citrusy stir-fry.</p>
-                <div class="btn-wraper">
+                <h3 class="price"> £7.00</h3>
+
+                <div class="btns-wraper">
                     <div class="btn-block">
-                        <button class="card-btn add-cart">Add to Cart</button>
+                        <button class="card-btn">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -185,6 +189,7 @@
         </footer>
         <!-- Footer end-->
     </div>
+    <script src="/javascripts/cart.js"></script>
 </body>
 
 </html>

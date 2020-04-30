@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="styles/cart.css">
     <script defer src="javascripts/cart.js" async></script>
-    <script defer src="javascripts/checkout.js"></script>
+    <!-- <script defer src="javascripts/checkout.js"></script> -->
     <title>Beer Belly</title>
 </head>
 
@@ -30,7 +30,7 @@
 
                     <!-- Seaarch field -->
                     <div class="search-container">
-                        <form action="/">
+                        <form action="beers.html">
                             <input type="text" placeholder="Search.." name="search" id="textsend">
                             <button type="submit"> <i class="fas fa-search search-icon"></i></button>
                         </form>
@@ -50,6 +50,12 @@
         <!-- Cart  start-->
         <section class="cart">
             <div class="content">
+                <div class="case-title">
+                    <h4>Your Case</h4>
+                    <hr>
+                </div>
+
+
                 <div class="products-container">
                     <div class="product-header">
                         <h5 class="product-title">PRODUCT</h5>
@@ -60,67 +66,9 @@
 
 
                 <!-- Cart Items-->
-                <div class="cart-items">
+                <div class="cart-items"></div>
+                <button id="btn-hide" class="btn-purchase" type="button" onclick="checkOut()">Checkout</button>
 
-                    <!-- Cart Row Item-->
-                    <div class="cart-row">
-                        <div class="cart-item cart-column">
-                            <div class="cart-item-image"></div>
-                            <span class="cart-item-title">Beer lol</span>
-                        </div>
-                        <span class="cart-price cart-column">£10.99</span>
-
-                        <!-- Quantity -->
-                        <div class="cart-quantity cart-column">
-                            <!-- <i class="fas fa-chevron-circle-left arrowL"></i> -->
-                            <input class="cart-quantity-input" type="number" value="1">
-                            <!-- <i class="fas fa-chevron-circle-right arrowR"></i> -->
-                            <i class="fas fa-times-circle btn btn-danger"></i>
-                        </div>
-                    </div>
-
-                    <!-- Cart Row Item-->
-                    <div class="cart-row">
-                        <div class="cart-item cart-column">
-                            <div class="cart-item-image"></div>
-                            <span class="cart-item-title">Beer mew</span>
-                        </div>
-                        <span class="cart-price cart-column">£12.99</span>
-
-                        <!-- Quantity -->
-                        <div class="cart-quantity cart-column">
-                            <!-- <i class="fas fa-chevron-circle-left arrowL"></i> -->
-                            <input class="cart-quantity-input" type="number" value="1">
-                            <!-- <i class="fas fa-chevron-circle-right arrowR"></i> -->
-                            <i class="fas fa-times-circle btn btn-danger"></i>
-                        </div>
-                    </div>
-
-                    <!-- Cart Row Item-->
-
-                    <div class="cart-row">
-                        <div class="cart-item cart-column">
-                            <div class="cart-item-image"></div>
-                            <span class="cart-item-title">Beer wow</span>
-                        </div>
-                        <span class="cart-price cart-column">£9.99</span>
-
-                        <!-- Quantity -->
-                        <div class="cart-quantity cart-column">
-                            <!-- <i class="fas fa-chevron-circle-left arrowL"></i> -->
-                            <input class="cart-quantity-input" type="number" value="2">
-                            <!-- <i class="fas fa-chevron-circle-right arrowR"></i> -->
-                            <i class="fas fa-times-circle btn btn-danger"></i>
-                        </div>
-                    </div>
-
-
-                    <div class="cart-total">
-                        <strong class="cart-total-title">Total:</strong>
-                        <span class="cart-total-price">£20.00</span>
-                    </div>
-                    <button id="btn-hide" class="btn-purchase" type="button" onclick="checkOut()">Checkout</button>
-                </div>
             </div>
         </section>
         <!-- Cart end-->
@@ -184,7 +132,7 @@
                                         <label>
                                             <input class=" row-checkbox" type="checkbox" name="sameadr" checked="checked"> Shipping address same as billing.
                                         </label>
-                                        <button class="btn-order" type="submit" value="payment">Place Order </button>
+                                        <button class="btn-order" type="submit" value="payment" onclick="placeOrder()">Place Order </button>
                                     </div>
                                 </div>
                             </form>
@@ -226,7 +174,7 @@
         <!-- Footer end-->
     </div>
 
-
+    <script src="/javascripts/cart.js"></script>
 </body>
 
 </html>
