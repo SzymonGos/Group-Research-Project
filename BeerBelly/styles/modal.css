@@ -64,6 +64,12 @@
     display: flex;
 }
 
+.modal-body p {
+    font-weight: 300;
+    line-height: 1.9em;
+    letter-spacing: 2px;
+}
+
 .column {
     margin: 15px 10px;
     flex: 50%;
@@ -96,7 +102,7 @@
 
 /* Hide the images by default */
 
-.mySlide {
+.product-slide {
     display: none;
 }
 
@@ -164,15 +170,7 @@
 }
 
 .image {
+    box-sizing: border-box;
     height: 800px;
     width: 600px;
-    float: right;
-    background-color: lightgray;
-}
-
-.image2 {
-    height: 800px;
-    width: 600px;
-    float: right;
-    background-color: bisque;
 }
