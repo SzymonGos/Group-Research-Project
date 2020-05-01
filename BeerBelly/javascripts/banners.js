@@ -3,7 +3,7 @@ showSlides();
 
 function showSlides() {
     var i;
-    var slides = document.querySelectorAll('.mySlides');
+    var slides = document.querySelectorAll('.banner-slide');
     var dots = document.querySelectorAll('.dot');
 
     for (i = 0; i < slides.length; i++) {
