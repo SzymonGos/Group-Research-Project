@@ -139,7 +139,7 @@ function displayCart() {
                 `
             <div class="cart-row">
                 <div class="cart-item cart-column">
-                    <img src="/img/products/${item.tag}.png"/> 
+                    <img src="img/products/${item.tag}.png"/> 
                     <span class="cart-item-title">${item.name}</span>
                 </div>
                 <span class="cart-price cart-column">£${item.price.toFixed(2)}</span>
