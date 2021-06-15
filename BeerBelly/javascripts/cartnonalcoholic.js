@@ -2,11 +2,6 @@ let carts = document.querySelectorAll('.add-cart');
 
 let products = [
 
-
-    //alcohol drinks end
-
-    // non-alcohol drinks start
-
     {
         name: 'Nanny State (0.5%)',
         tag: 'Brewdog___Nanny_State_Can',
